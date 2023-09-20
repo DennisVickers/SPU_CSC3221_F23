@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+    
+  <form action="/submit" method="post">
+      <!-- Text Input -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Full Name">
+      <br><br>
+
+      <!-- Password Input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <br><br>
+      
+      <!-- Radio Buttons -->
+      <label>Agree to Terms and Conditions?:</label>
+      <input type="radio" id="yes" name="terms" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="terms" value="no">
+      <label for="no">No</label>
+      <br><br>
+
+      <!-- Checkbox -->
+      <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+      <label for="subscribe">Subscribe to newsletter</label>
+      <br><br>
+
+      <!-- Dropdown List -->
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+      </select>
+      <br><br>
+
+      <!-- Textarea -->
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+      <br><br>
+
+      <!-- Submit Button -->
+      <button type="submit" name="register" value="Submit">Register</button>
+  </form>
+
+</body>
+</html>
