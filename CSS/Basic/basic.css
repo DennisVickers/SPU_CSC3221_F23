@@ -22,3 +22,6 @@ li {
   color: orange;
   font-style: italic;
 }
+ul[type="square"] {
+  font-size: 2rem;
+}
