@@ -1,11 +1,8 @@
-/* Combinators
+/*
 Descendent: ' '
 Child: '>'
 General sibling: '~'
 Adjacent sibling: '+'
-Column: '||'
-Pseudo classes: ':' elements based on state. Example: a:visited
-Pseudo elements: '::' entities not in HTML. Ex. P::first-line 
 */
 
 body {
@@ -16,42 +13,41 @@ header {
   text-align: center;
 }
 
-/* descendent combinator */
 header h2 {
-  color:blue
+  color: blue;
 }
+
 header h3 {
   font-style: italic;
 }
 
-/* child combinator */
 #introduction>p {
   background-color: yellowgreen;
 }
 
-/* general sibling */
 #research .section_head~section {
   background-color: darkgrey;
 }
 
-/* adjacent sibling */
 #s1+section {
   font-style: italic;
 }
 
-/* attribute selector */
 details[open] > summary {
   background-color: lightgray;
 }
 
-/* Pseudo element */
-.section_head::first-letter {
+.section_head::first-line {
   font-size: 1.5rem;
-  color: black ;
+  color: black;
   text-transform: capitalize;
 }
 
-/* Psuedo class */
 #conclusion ul>li:nth-child(odd) {
   font-style: italic;
 }
+
+li:hover {
+  color: blue;
+}
+
