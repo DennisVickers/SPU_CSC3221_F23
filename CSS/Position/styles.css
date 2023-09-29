@@ -1,0 +1,50 @@
+/* Default styling for all boxes */
+div {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Static position */
+.static-box {
+  background-color: blue;
+}
+
+/* Relative position */
+.relative-box {
+  position: relative;
+  left: 50px;
+  background-color: green;
+}
+
+/* Absolute position */
+.absolute-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+}
+
+/* Fixed position */
+.fixed-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: purple;
+}
+
+/* Sticky position */
+.sticky-box {
+  position: sticky;
+  top: 0;
+  background-color: orange;
+}
+
+/* Content box to help demonstrate 'sticky' */
+.content {
+  height: 2000px;
+  background-color: lightgray;
+}
