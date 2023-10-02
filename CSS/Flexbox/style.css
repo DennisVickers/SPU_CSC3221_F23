@@ -34,7 +34,7 @@ section {
   /* direction of main and cross axis */
   flex-direction: row;  
   flex-wrap:nowrap;
-  /* flex-flow:row nowrap; */
+  /* flex-flow:row wrap; */
 }
 
 article {

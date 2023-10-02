@@ -23,6 +23,7 @@ div {
 /* Absolute position */
 .absolute-box {
   position: absolute;
+  left: 250px;
   bottom: 0;
   right: 0;
   background-color: red;
