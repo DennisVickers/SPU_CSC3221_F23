@@ -1,9 +1,24 @@
-let var1;
-let var2;
+let v1;
+let v2;
 let result;
 
+// Falsy
+v1 = false;
+v1 = -0;
+v1 = "";
+v1 = null;
+v1 = undefined;
+v1 = NaN;
+
+// Truthy
+v1 = true;
+v1 = -1;
+v1 = "hello";
+v1 = [];
+v1 = {};
+v1 = (Function());
 /* Single value expression evaluation */
-result = (var1) ? `${var1} is Truthy` : `${var1} is Falsy`;
+result = (v1) ? `${v1} is Truthy` : `${v1} is Falsy`;
 console.log(result);
 
 /* Loose comparisons
