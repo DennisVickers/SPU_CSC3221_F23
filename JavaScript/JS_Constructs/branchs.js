@@ -1,8 +1,10 @@
-/* Branching */
+/* 
+ * Branching 
+*/
 const v1 = 10;
 let r;
 
-// If / if-else / if-else-if
+/* If / if-else / if-else-if */
 if (v1 === 10) {
   r = "True branch";
 }
@@ -21,7 +23,7 @@ if (v1 === "10") {
   r = "False branch";
 }
 
-// ternary if
+/* ternary if */
 r = (v1 === "10") ? "True Branch" : "False Branch";
 
 /* Switch */
@@ -51,5 +53,5 @@ switch (new Date().getDay()) {  // Uses Strict Comparison
     r = "Day unknown";
 }
 
-// Results
+/* Results */
 console.log(r);
