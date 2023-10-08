@@ -45,6 +45,17 @@ function sum(...parms) {
 console.log(sum(1, 2, 3));
 console.log(sum(1, 2, 3, 4));
 
+/* Scope and Closure */
+function outer() {
+  const outerVar = 'I am from outer function';
+  function inner() {
+    console.log(outerVar);
+  }
+  return inner;
+}
+const myInner = outer();
+myInner();  // Output: I am from outer function
+
 /* FUNCTION EXPRESSIONS */
 /* Anonymous */
 const cube = function (x) {
