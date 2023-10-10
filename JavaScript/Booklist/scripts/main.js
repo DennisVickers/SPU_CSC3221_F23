@@ -112,9 +112,7 @@ function LoadBooks() {
   for (let i = 0; i < localStorage.length; i++){
     let key = localStorage.key(i);
     let value = JSON.parse(localStorage.getItem(key));
-
-    // let value = JSON.parse(localStorage.getItem(key));
-    console.log(key, value[0],value[1]);
+    // console.log(key, value[0],value[1]);
       
     // Create tr element
     const row = document.createElement("tr");
