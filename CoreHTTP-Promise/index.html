@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreHTTP</title>
+  <link rel="stylesheet" href="styles/csc3221.css">
+</head>
+<body>
+  <div class="page-area">
+    <h2 id="page-title">CoreHTTP Library</h2>
+    <form id="request-form">
+      <div>
+        <label for="route">Route</label>
+        <input type="url" name="url"
+               id="route" class="full-width"
+               value="https://jsonplaceholder.typicode.com/users"
+               pattern="https://.*" size="50"
+               required>
+      </div>
+      <fieldset>
+        <legend>Choose which type of HTTP request to send</legend>
+        <label>
+          <input type="radio" name="HTTPtype" value="get" checked>&nbspGET
+        </label>
+        <label>
+          <input type="radio" name="HTTPtype"  value="post">&nbspPOST</label>
+        <label>
+          <input type="radio" name="HTTPtype" value="put">&nbspPUT 
+        </label>
+        <label>
+          <input type="radio" name="HTTPtype" value="delete">&nbspDELETE 
+        </label>
+        <div>
+          <input type="submit" value="SEND" class="primary-button" id="SendReq">
+        </div>
+      </fieldset>
+    </form>
+    <h4>Response:</h4>
+    <section id="response">
+
+    </section>
+  </div>
+
+  <script src="coreHTTP.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
